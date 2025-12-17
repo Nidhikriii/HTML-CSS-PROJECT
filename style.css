@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* HERO */
+.hero {
+  min-height: 60vh;
+  background-image: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8%;
+}
+
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  margin: 1rem 0 2rem;
+  font-size: 1.1rem;
+}
+
+.search-box {
+  background: white;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.search-box input,
+.search-box select {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.search-box button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+}
+
+/* TYPES */
+.types {
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.type-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.type-card:hover {
+  transform: translateY(-6px);
+}
+
+/* LISTINGS */
+.listings {
+  padding: 4rem 8%;
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 2rem;
+}
+
+.listing-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.listing-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.listing-card h3 {
+  margin: 1rem;
+}
+
+.listing-card p {
+  margin: 0 1rem 1rem;
+}
+
+.listing-card button {
+  margin: 1rem;
+  width: calc(100% - 2rem);
+  padding: 0.7rem;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+}
+
+/* WHY */
+.why {
+  padding: 4rem 8%;
+  background: #eef2ff;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.why-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background: #111827;
+  color: white;
+}
+.login-btn {
+  background: transparent;
+  border: 1px solid #4f46e5;
+  color: #4f46e5;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: #4f46e5;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #eef2ff;
+}
+/* TYPES SIDEBAR LAYOUT */
+.types-layout {
+  display: flex;
+  padding: 4rem 8%;
+  gap: 3rem;
+}
+
+/* LEFT SIDEBAR */
+.types-sidebar {
+  width: 220px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.types-sidebar h3 {
+  margin-bottom: 1.5rem;
+  color: #4f46e5;
+}
+
+.type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.type-card {
+  padding: 0.8rem 1rem;
+  background: #f8f9fc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.type-card:hover {
+  background: #eef2ff;
+  transform: translateX(5px);
+}
+
+/* RIGHT CONTENT */
+.types-content {
+  flex: 1;
+}
+/* MAIN PROPERTY LAYOUT */
+.property-layout {
+  display: flex;
+  gap: 2.5rem;
+  padding: 4rem 8%;
+}
+
+/* LEFT SIDEBAR */
+.types-sidebar {
+  width: 220px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+
+.types-sidebar h3 {
+  margin-bottom: 1.5rem;
+  color: #4f46e5;
+}
+
+.type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.type-card {
+  padding: 0.8rem 1rem;
+  background: #f8f9fc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.type-card:hover {
+  background: #eef2ff;
+  transform: translateX(6px);
+}
+
+/* RIGHT LISTINGS */
+.listings {
+  flex: 1;
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+/* LISTING CARD HOVER EFFECT */
+.listing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.listing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+.listing-card img {
+  transition: transform 0.4s ease;
+}
+
+.listing-card:hover img {
+  transform: scale(1.08);
+}
+.listing-card button {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.listing-card button:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+.listing-card h3,
+.listing-card p {
+  transition: color 0.3s ease;
+}
+
+.listing-card:hover h3 {
+  color: #4f46e5;
+}
+.search-box {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.search-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+}
+.search-box input,
+.search-box select {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box input:hover,
+.search-box select:hover {
+  border-color: #4f46e5;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.15);
+}
+.search-box button {
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79,70,229,0.4);
+}
+.search-box button:active {
+  transform: scale(0.96);
+}
